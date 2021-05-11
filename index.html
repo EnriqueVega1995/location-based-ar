@@ -20,13 +20,20 @@
         <a-asset-item id="mag" src="assets/magnemite/scene.gltf"></a-asset-item>
     </a-assets>
     <a-entity 
-        gps-entity-place="longitude: 13.711317; latitude: -89.253494;"
+        ggps-entity-place="longitude: 13.711110; latitude: -89.253515;"
         gltf-model="#mag"
         rotation="0 180 0"
         scale="0.5 0.5 0.5"
         position="0 2 0"
         animation-mixer
     ></a-entity>
+    <a-text
+        value="This content will always face you."
+        look-at="[gps-camera]"
+        scale="300 300 300"
+        color="red"
+        gps-entity-place="longitude: 13.711110; latitude: -89.253515;"
+    ></a-text>
     <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
 </body>
